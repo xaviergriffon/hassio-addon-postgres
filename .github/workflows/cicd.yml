@@ -17,10 +17,9 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
-      max-parallel: 1
       matrix:
         arch: [armhf, armv7, aarch64, amd64]
-      fail-fast: true
+      fail-fast: false
 
     steps:
     - uses: actions/checkout@v2
